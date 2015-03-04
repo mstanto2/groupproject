@@ -1,0 +1,139 @@
+/* css document */
+/* zero out styles */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, input, legend, button, table, caption, tbody, tfoot, thead, tr, th, td, hr {
+  margin: 0;
+  border-style: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+  outline: 0;
+  text-align: left;
+  text-indent: 0;
+  vertical-align: baseline;
+  background: none; }
+
+html, body, div, applet, object, iframe, address, blockquote, pre, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, th, td {
+  position: relative; }
+
+html {
+  font-size: 62.5%;
+  /* reset font to 10px starting point */ }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* end zero out styles */
+/* Sass Variables */
+/* General Styles */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.center, body, .barcode, .btn, .btn-primary, .btn-dialog {
+  margin-left: auto;
+  margin-right: auto; }
+
+.h-page, .icon, .icon-add, .icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu {
+  display: inline-block; }
+
+h1, h2, h3, h4, h5, .header, .main, p {
+  text-align: center; }
+
+.h-cardname, p {
+  margin-bottom: 20px; }
+
+.barcode, .reward-number {
+  margin-bottom: 40px; }
+
+.h-cardname, .reward-number {
+  color: #4682B4; }
+
+/* Header Styles */
+h1, h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
+
+.h-page {
+  color: #FFFFFF;
+  font-size: 1.6em; }
+
+.h-cardname {
+  font-size: 2.5em; }
+
+/* Link Styles */
+/* Button Styles */
+.btn, .btn-primary, .btn-dialog {
+  width: 10em;
+  height: 2.5em;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 0.9em;
+  text-align: center; }
+
+.btn:active, .btn-primary:active, .btn-dialog:active {
+  background: #707070;
+  outline: 1px dashed #C0C0C0;
+  outline-offset: -4px; }
+
+.btn-primary {
+  background: #FF7F50; }
+
+.btn-dialog {
+  background: #4682B4; }
+
+/* Image Styles */
+.icon, .icon-add, .icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu {
+  background: url("../img/icon-sprites.png");
+  background-size: 150px auto;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px; }
+
+.icon-left, .icon-home, .icon-back, .icon-search {
+  float: left; }
+
+.icon-home {
+  background-position: 0 -30px; }
+
+.icon-menu {
+  float: right;
+  background-position: -120px -30px; }
+
+/* Page Styles */
+body {
+  max-width: 800px;
+  font: 16px "Open Sans", sans-serif; }
+
+.header {
+  background: #4682B4;
+  margin-bottom: 60px;
+  padding: 10px 10px 12px; }
+
+.barcode {
+  background: gray;
+  width: 200px;
+  height: 200px; }
+
+.reward-number {
+  font-size: 1.3em; }
+
+/*# sourceMappingURL=global.css.map */
