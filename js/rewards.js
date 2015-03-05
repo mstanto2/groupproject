@@ -8,20 +8,20 @@
 		cardData: function(){
 			console.log("Test Data");
 			this.rewardsCards = [
-									{"cardName":"CVS", "category": "Pharmacy", "cardNumber":"5544312456", "timesUsed": 1},
-									{"cardName":"ACE Hardware", "category": "Hardware", "cardNumber":"19142673902", "timesUsed": 3},
-									{"cardName":"Home Depot", "category": "Hardware", "cardNumber":"159357456", "timesUsed": 6},
-									{"cardName":"Dick's Sporting Goods", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":7},
-									{"cardName":"Lowe's", "category": "Hardware", "cardNumber":"159357456", "timesUsed": 10},
-									{"cardName":"JC Penny's", "category": "Department Store", "cardNumber":"159357456", "timesUsed": 4},
-									{"cardName":"Kohl's", "category": "Department Store", "cardNumber":"159357456", "timesUsed": 16},
-									{"cardName":"Academy Sports", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":9},
-									{"cardName":"Sports Authority", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":16},
-									{"cardName":"Walgreens", "category": "Pharmacy", "cardNumber":"75335912", "timesUsed": 15},
-									{"cardName":"REI", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":5},
-									{"cardName":"Gary Gribble's Running Sports", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":1}
+				{"cardName":"CVS", "category": "Pharmacy", "cardNumber":"5544312456", "timesUsed": 1},
+				{"cardName":"ACE Hardware", "category": "Hardware", "cardNumber":"19142673902", "timesUsed": 3},
+				{"cardName":"Home Depot", "category": "Hardware", "cardNumber":"159357456", "timesUsed": 6},
+				{"cardName":"Dick's Sporting Goods", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":7},
+				{"cardName":"Lowe's", "category": "Hardware", "cardNumber":"159357456", "timesUsed": 10},
+				{"cardName":"JC Penny's", "category": "Department Store", "cardNumber":"159357456", "timesUsed": 4},
+				{"cardName":"Kohl's", "category": "Department Store", "cardNumber":"159357456", "timesUsed": 16},
+				{"cardName":"Academy Sports", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":9},
+				{"cardName":"Sports Authority", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":16},
+				{"cardName":"Walgreens", "category": "Pharmacy", "cardNumber":"75335912", "timesUsed": 15},
+				{"cardName":"REI", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":5},
+				{"cardName":"Gary Gribble's Running Sports", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":1}
 
-								]
+			]
 		},
 
 		displayCards: function(){
