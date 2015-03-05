@@ -1,0 +1,171 @@
+@import url('reset.css');
+
+
+/*  Code39Azalea Copyright 2012 Jerry Whiting (CC BY-ND 3.0) azalea.com/web-fonts/  */
+@font-face {
+  font-family: Code39AzaleaFont;
+  src: url('../images/fonts/Code39Azalea.eot');
+  src: url('../images/fonts/Code39Azalea.eot?#iefix') format('eot'),
+  	   url('../images/fonts/Code39Azalea.svg#Code39Azalea') format('svg'),
+       url('../images/fonts/Code39Azalea.woff') format('woff'),
+       url('../images/fonts/Code39Azalea.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+	font-family: sans-serif;
+	width: 100%;
+}
+
+.header, .footer {
+	font-family: sans-serif;
+	background-color: rgb(70,130,180);
+	text-align: center;
+}
+
+.header {
+	color: rgb(255,255,255);
+	font-size: 24px;
+	font-size: 9vw;
+}
+
+.footer {
+	color: rgb(255,255,255);
+	font-size: 16px;
+	font-size: 5vw;
+}
+
+.sortMenu {
+	font-size: 10px;
+	font-size: 6vw;
+	font-weight: normal;
+	margin-top: 24px;
+	margin-top: 4vw;
+	text-align: center;
+}
+
+.listMenu {
+	float: left;
+	font-size: 10px;
+	font-size: 6vw;
+	font-weight: normal;
+	margin-top: 24px;
+	margin-top: 4vw;
+	text-align: center;
+	width: 100%;
+
+}
+
+.cards {
+	background-color: rgb(255,255,255);	
+	float: left;
+	min-height: 500px;
+	min-height: 150vw;
+	width: 100%;
+}
+
+.rewardsCard {
+	background-color: rgba(153,204,255,.5);
+	color: rgb(70,130,180);
+	display: block;
+	float: left;
+	font-size: 24px;
+	font-size: 7vw;
+	height: 20px;
+	height: 8vw;
+	margin-bottom: 10px;
+	margin-bottom: 2vw;
+	margin-top: 10px;
+	margin-top: 2vw;
+	padding: 16px;
+	padding: 2vw;
+	text-align: center;
+	width: 100%;
+}
+
+.header, .footer {
+	padding: 8px;
+	padding: 1vw;
+}
+
+.footer {
+	clear: both;
+	/*position: absolute;
+	bottom: 20;*/
+	height: 20px;
+	height: 8vw;
+}
+
+.center {
+	text-align: center;
+}
+
+.modal {
+	display: hidden;
+}
+
+.modalP {
+	text-align: center;
+}
+
+.modalP:first-of-type {
+	font-size: 30px;
+	font-size: 10vw;
+	margin-top: 30px;
+	margin-top: 10vw;
+}
+
+.modalP:last-of-type {
+	font-size: 20px;
+	font-size: 7vw;
+	margin-top: 10px;
+	margin-top: 1vw;
+}
+
+
+
+
+@media screen and (min-width: 401px) {
+
+	.header, .footer {
+		padding: 10px;
+		padding: 1vw;
+	}
+
+	.header {
+		font-size: 28px;
+		font-size: 7vw;
+	}
+
+	.footer {
+		font-size: 16px;
+		font-size: 2vw;
+	}
+
+	.cards {
+		float: left;
+		font-size: 24px;
+		font-size: 3vw;
+	}
+
+}
+
+@media screen and (min-width: 781px) {
+
+	.header {
+		font-size: 28px;
+		font-size: 5.5vw;
+	}
+
+	.footer {
+		font-size: 18px;
+		font-size: 1.75vw;
+	}
+
+	.cards {
+		float: left;
+		font-size: 24px;
+		font-size: 2.5vw;
+	}
+}
