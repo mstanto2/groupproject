@@ -8,7 +8,7 @@
 		cardData: function(){
 			//console.log("Test Data");
 			this.rewardsCards = [
-				{"cardName":"CVS", "category": "Pharmacy", "cardNumber":"5544312456", "timesUsed": 1, "lastDate": },
+				{"cardName":"CVS", "category": "Pharmacy", "cardNumber":"5544312456", "timesUsed": 1},
 				{"cardName":"ACE Hardware", "category": "Hardware", "cardNumber":"19142673902", "timesUsed": 3},
 				{"cardName":"Home Depot", "category": "Hardware", "cardNumber":"159357456", "timesUsed": 6},
 				{"cardName":"Dick's Sporting Goods", "category": "Sporting Goods", "cardNumber":"654357951", "timesUsed":7},
