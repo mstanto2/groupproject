@@ -15,7 +15,7 @@
 
 		<section class="cards" id="cards">
 
-			<h1 class="sortMenu">Sort by:
+			<h1 class="sortMenu" id="sMenu">Sort by:
 				<select class="sortMenu" id="sortMenu">
 				  <option class="sortMenu">Frequency</option>
 				  <option class="sortMenu">Alphabetically</option>				  
@@ -26,9 +26,10 @@
 			<ul class="listMenu" id="rewardsList">
 			</ul>
 
-			<section class="modal">
+			<section class="modal" id="barcodeModal">
+				<a href="#cards" class="close" title="Close">X</a>
 				<p class="modalP" id="companyName"></p>
-				<p class="modalP" id="barcode"></p>
+				<p class="barcode" id="barcode"></p>
 				<p class="modalP" id="number"></p>
 			</section>
 

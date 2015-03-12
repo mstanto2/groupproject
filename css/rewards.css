@@ -13,6 +13,16 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: '3-of-9-Barcode';
+    src: url('../images/fonts/3-of-9-Barcode.ttf.eot');
+    src: url('../images/fonts/3-of-9-Barcode.ttf.eot?#iefix') format('eot'),
+         url('../images/fonts/3-of-9-Barcode.ttf.svg#3-of-9-Barcode') format('svg'),
+         url('../images/fonts/3-of-9-Barcode.ttf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .wrapper {
 	font-family: sans-serif;
 	width: 100%;
@@ -102,18 +112,33 @@
 }
 
 .modal {
-	display: hidden;
+	border: 3px solid rgb(70,130,180);
+	border-radius: 10px;
+	display: none;
+	margin-left: -20vw;
+	margin-top: 45vw;
+	position: relative;
+	transform: rotate(90deg);
+	width: 140%;
+}
+
+.barcode {
+	/*font-family: Code39AzaleaFont;*/
+	font-family: '3-of-9-Barcode';
+	font-size: 32px;
+	margin: 100px 0 10px 0;
+	margin: 20vw 0 2vw 0;
+	text-align: center;
+	width: 100%;
 }
 
 .modalP {
-	text-align: center;
-}
-
-.modalP:first-of-type {
+	color: rgb(70,130,180);
 	font-size: 30px;
 	font-size: 10vw;
 	margin-top: 30px;
 	margin-top: 10vw;
+	text-align: center;
 }
 
 .modalP:last-of-type {
@@ -121,6 +146,30 @@
 	font-size: 7vw;
 	margin-top: 10px;
 	margin-top: 1vw;
+}
+
+/*.space {
+	float: left;
+	width: 90%;
+}*/
+
+.close {
+	background-color: rgb(200,0,0);
+	border: 3px solid;
+	border-radius: 90%;
+	color: rgb(70,130,180);
+	float: left;
+	font-size: 16px;
+	font-size: 12vw;
+	position: absolute;
+	left: -21px;
+	top: -21px;	
+	left: -7vw;
+	top: -7vw;
+	text-align: center;
+	text-decoration: none;
+	width: 10%;
+	z-index: 100;
 }
 
 
