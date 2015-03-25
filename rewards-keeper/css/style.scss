@@ -17,12 +17,12 @@ $color-code:#CC66CC;
 	display:table; 
 	clear:both;
 }
-.center {
+%center {
 	margin-left:auto;
 	margin-right:auto;
 }
 body, .barcode {
-	@extend .center;
+	@extend %center;
 }
 .h-page, .icon {
 	display:inline-block;
@@ -36,14 +36,20 @@ h1, h2 , h3, h4, h5, .header, .main, p {
 .barcode, .reward-number {
 	margin-bottom:40px;
 }
-.menu-sortcards, .h-cardname, .reward-number {
+.menu-sortcards, %h, #add-newcard > label, .reward-number {
 	color:$main-blue;
+}
+a {
+	color:$accent-orange;
 }
 
 /* HEADER STYLES */
-h1,h2,h3,h4,h5 {
+%h {
 	font-family:$font-header;
 	font-weight:400;
+}
+.h-page, .h-cardname, .h-md {
+	@extend %h;
 }
 .h-page {
 	color:#FFFFFF;
@@ -52,12 +58,16 @@ h1,h2,h3,h4,h5 {
 .h-cardname {
 	font-size:2.5em;
 }
+.h-md {
+	margin-bottom:40px;
+	font-size:1.4em;
+}
 
 
 /* BUTTON STYLES */
-.btn {
-	@extend .center;
-	width:10em;
+%btn {
+	@extend %center;
+	width:9em;
 	height:2.5em;
 	border-radius:2px;
 	cursor:pointer;
@@ -71,13 +81,19 @@ h1,h2,h3,h4,h5 {
 	outline-offset:-4px;
 }
 .btn-primary, .btn-dialog {
-	@extend .btn;
+	@extend %btn;
 }
 .btn-primary {
 	background:$accent-orange;
 }
 .btn-dialog {
 	background:$main-blue;
+}
+.btn-group {
+	margin-top:50px;
+}
+.btn-group .btn-primary:first-child {
+	margin-right:25px;
 }
 
 /* IMAGE STYLES */
@@ -156,6 +172,22 @@ body {
 }
 
 /* FORM STYLES */
+#add-newcard {
+	@extend %center;
+	width:75%;
+}
+label, input {
+	display:block;
+}
+label {
+	padding-bottom:10px;
+}
+input {
+	width:100%;
+	margin-bottom:30px;
+	padding:8px;
+	border:1px solid $main-blue;
+}
 select {
 	-moz-appearance:none;
 	-webkit-appearance:none;
@@ -169,4 +201,11 @@ select {
 }
 option {
 	background:blue;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width:768px) {
+	#add-newcard {
+		width:50%;
+	}
 }

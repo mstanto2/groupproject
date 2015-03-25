@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Add Card | Rewards Keeper</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+	<link href="css/global.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<header class="header">
+		<a class="icon-home" title="Home" href="index.html"></a>
+		<h1 class="h-page">Rewards Keeper</h1>
+		<a class="icon-menu" title="Home" href="#menu"></a>
+	</header>
+	<main class="main">
+		<h3 class="h-md">Add New Reward Card</h2>
+		<form id="add-newcard" action="#" method="POST">
+			<label for="bname">Business Name: </label>
+			<input type="text" id="bname" name="bname">
+			<label for "btype">Type of business: </label>
+			<input type="text" id="btype" name="btype" list="bcategory">
+				<datalist id="bcategory">
+					<option value="Department Store">
+					<option value="Grocery Store">
+					<option value="Hardware">
+					<option value="Pharmacy">
+					<option value="Restaurant">
+					<option value="Sporting Goods">
+				</datalist>
+			<label for="rnumber">Enter or <a href="#scanbarcode">Scan</a> rewards number: </label>
+			<input type="text" id="rnumber" name="rnumber">
+
+			<p class="btn-group">
+				<button class="btn-primary" id="addCard" type="submit">Add Card</button>
+				<button class="btn-primary">Cancel</button>
+			</p>
+		</form>
+		
+	</main>
+
+	<script src="code.js" type="text/javascript"></script>
+</body>
+</html>

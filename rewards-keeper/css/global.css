@@ -47,7 +47,7 @@ blockquote, q {
   display: table;
   clear: both; }
 
-.center, body, .barcode, .btn, .btn-primary, .btn-dialog {
+body, .barcode, .btn-primary, .btn-dialog, #add-newcard {
   margin-left: auto;
   margin-right: auto; }
 
@@ -63,11 +63,14 @@ h1, h2, h3, h4, h5, .header, .main, p {
 .barcode, .reward-number {
   margin-bottom: 40px; }
 
-.menu-sortcards, .h-cardname, .reward-number {
+.menu-sortcards, .h-page, .h-cardname, .h-md, #add-newcard > label, .reward-number {
   color: #4682B4; }
 
+a {
+  color: #FF7F50; }
+
 /* HEADER STYLES */
-h1, h2, h3, h4, h5 {
+.h-page, .h-cardname, .h-md {
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
@@ -78,9 +81,13 @@ h1, h2, h3, h4, h5 {
 .h-cardname {
   font-size: 2.5em; }
 
+.h-md {
+  margin-bottom: 40px;
+  font-size: 1.4em; }
+
 /* BUTTON STYLES */
-.btn, .btn-primary, .btn-dialog {
-  width: 10em;
+.btn-primary, .btn-dialog {
+  width: 9em;
   height: 2.5em;
   border-radius: 2px;
   cursor: pointer;
@@ -88,7 +95,7 @@ h1, h2, h3, h4, h5 {
   font-size: 0.9em;
   text-align: center; }
 
-.btn:active, .btn-primary:active, .btn-dialog:active {
+.btn:active {
   background: #707070;
   outline: 1px dashed #C0C0C0;
   outline-offset: -4px; }
@@ -98,6 +105,12 @@ h1, h2, h3, h4, h5 {
 
 .btn-dialog {
   background: #4682B4; }
+
+.btn-group {
+  margin-top: 50px; }
+
+.btn-group .btn-primary:first-child {
+  margin-right: 25px; }
 
 /* IMAGE STYLES */
 .icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu, .icon-add {
@@ -160,6 +173,21 @@ body {
   font-size: 1.3em; }
 
 /* FORM STYLES */
+#add-newcard {
+  width: 75%; }
+
+label, input {
+  display: block; }
+
+label {
+  padding-bottom: 10px; }
+
+input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 8px;
+  border: 1px solid #4682B4; }
+
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -170,5 +198,13 @@ select {
   background: #99CCFF;
   padding: 3px;
   font-size: 1em; }
+
+option {
+  background: blue; }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  #add-newcard {
+    width: 50%; } }
 
 /*# sourceMappingURL=global.css.map */
