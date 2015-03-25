@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 @import 'reset';
 
-/* Sass Variables */
+/* SASS VARIABLES */
 $font-header: 'Raleway', sans-serif;
 $font-stack: 'Open Sans', sans-serif;
 $main-blue:#4682B4;
@@ -11,7 +11,7 @@ $accent-darkblue:#0000CD;
 $accent-gray:#404041;
 $color-code:#CC66CC;
 
-/* General Styles */
+/* GENERAL STYLES */
 .clearfix:after{
 	content: ""; 
 	display:table; 
@@ -36,11 +36,11 @@ h1, h2 , h3, h4, h5, .header, .main, p {
 .barcode, .reward-number {
 	margin-bottom:40px;
 }
-.h-cardname, .reward-number {
+.menu-sortcards, .h-cardname, .reward-number {
 	color:$main-blue;
 }
 
-/* Header Styles */
+/* HEADER STYLES */
 h1,h2,h3,h4,h5 {
 	font-family:$font-header;
 	font-weight:400;
@@ -53,10 +53,8 @@ h1,h2,h3,h4,h5 {
 	font-size:2.5em;
 }
 
-/* Link Styles */
 
-
-/* Button Styles */
+/* BUTTON STYLES */
 .btn {
 	@extend .center;
 	width:10em;
@@ -82,22 +80,38 @@ h1,h2,h3,h4,h5 {
 	background:$main-blue;
 }
 
-/* Image Styles */
-.icon {
+/* IMAGE STYLES */
+%icon {
 	background:url('../img/icon-sprites.png');
-	background-size:150px auto;
 	background-repeat:no-repeat;
+}
+%icon-reg, %icon-lg {
+	@extend %icon;
+}
+%icon-reg {
+	background-size:150px auto;
 	width:30px;
 	height:30px;
 }
-.icon-add, .icon-settings, .icon-success, .icon-warning, .icon-favorite,.icon-home, .icon-back, .icon-search, .icon-close, .icon-menu  {
-	@extend .icon;
+%icon-lg {
+	background-size:225px;
+	width:45px;
+	height:45px;
 }
-.icon-left {
+.icon-settings, .icon-success, .icon-warning, .icon-favorite,.icon-home, .icon-back, .icon-search, .icon-close, .icon-menu  {
+	@extend %icon-reg;
+}
+.icon-add {
+	@extend %icon-lg
+}
+%icon-left {
 	float:left;
 }
+%icon-right {
+	float:right;
+}
 .icon-home, .icon-back, .icon-search {
-	@extend .icon-left;
+	@extend %icon-left;
 }
 .icon-home {
 	background-position:0 -30px;
@@ -106,8 +120,14 @@ h1,h2,h3,h4,h5 {
 	float:right;
 	background-position:-120px -30px;
 }
+.icon-add {
+	@extend %icon-right;
+	position:fixed;
+	right:20px;
+	bottom:20px;
+}
 
-/* Page Styles */
+/* PAGE STYLES */
 body {
 	max-width:800px;
 	font:16px $font-stack;
@@ -117,6 +137,15 @@ body {
 	margin-bottom:60px;
 	padding:10px 10px 12px;
 }
+.listMenu > li {
+	padding:20px;
+}
+.listMenu > li:nth-child(2n + 1) {
+	background:#F8F8F8;
+}
+.listMenu > li:nth-child(2n + 2) {
+	background:#E0E0E0;
+}
 .barcode {
 	background:gray;
 	width:200px;
@@ -124,4 +153,17 @@ body {
 }
 .reward-number {
 	font-size:1.3em;
+}
+
+/* FORM STYLES */
+select {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	-webkit-border-radius:0;
+	border:0;
+}
+.menu-sortoptions {
+	background:$accent-lightblue;
+	padding:3px;
+	font-size:1em;
 }

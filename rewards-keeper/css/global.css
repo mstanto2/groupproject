@@ -40,8 +40,8 @@ blockquote, q {
   quotes: "" ""; }
 
 /* end zero out styles */
-/* Sass Variables */
-/* General Styles */
+/* SASS VARIABLES */
+/* GENERAL STYLES */
 .clearfix:after {
   content: "";
   display: table;
@@ -51,7 +51,7 @@ blockquote, q {
   margin-left: auto;
   margin-right: auto; }
 
-.h-page, .icon, .icon-add, .icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu {
+.h-page, .icon {
   display: inline-block; }
 
 h1, h2, h3, h4, h5, .header, .main, p {
@@ -63,10 +63,10 @@ h1, h2, h3, h4, h5, .header, .main, p {
 .barcode, .reward-number {
   margin-bottom: 40px; }
 
-.h-cardname, .reward-number {
+.menu-sortcards, .h-cardname, .reward-number {
   color: #4682B4; }
 
-/* Header Styles */
+/* HEADER STYLES */
 h1, h2, h3, h4, h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
@@ -78,8 +78,7 @@ h1, h2, h3, h4, h5 {
 .h-cardname {
   font-size: 2.5em; }
 
-/* Link Styles */
-/* Button Styles */
+/* BUTTON STYLES */
 .btn, .btn-primary, .btn-dialog {
   width: 10em;
   height: 2.5em;
@@ -100,16 +99,26 @@ h1, h2, h3, h4, h5 {
 .btn-dialog {
   background: #4682B4; }
 
-/* Image Styles */
-.icon, .icon-add, .icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu {
+/* IMAGE STYLES */
+.icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu, .icon-add {
   background: url("../img/icon-sprites.png");
+  background-repeat: no-repeat; }
+
+.icon-settings, .icon-success, .icon-warning, .icon-favorite, .icon-home, .icon-back, .icon-search, .icon-close, .icon-menu {
   background-size: 150px auto;
-  background-repeat: no-repeat;
   width: 30px;
   height: 30px; }
 
-.icon-left, .icon-home, .icon-back, .icon-search {
+.icon-add {
+  background-size: 225px;
+  width: 45px;
+  height: 45px; }
+
+.icon-home, .icon-back, .icon-search {
   float: left; }
+
+.icon-add {
+  float: right; }
 
 .icon-home {
   background-position: 0 -30px; }
@@ -118,7 +127,12 @@ h1, h2, h3, h4, h5 {
   float: right;
   background-position: -120px -30px; }
 
-/* Page Styles */
+.icon-add {
+  position: fixed;
+  right: 20px;
+  bottom: 20px; }
+
+/* PAGE STYLES */
 body {
   max-width: 800px;
   font: 16px "Open Sans", sans-serif; }
@@ -128,6 +142,15 @@ body {
   margin-bottom: 60px;
   padding: 10px 10px 12px; }
 
+.listMenu > li {
+  padding: 20px; }
+
+.listMenu > li:nth-child(2n + 1) {
+  background: #F8F8F8; }
+
+.listMenu > li:nth-child(2n + 2) {
+  background: #E0E0E0; }
+
 .barcode {
   background: gray;
   width: 200px;
@@ -135,5 +158,17 @@ body {
 
 .reward-number {
   font-size: 1.3em; }
+
+/* FORM STYLES */
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0; }
+
+.menu-sortoptions {
+  background: #99CCFF;
+  padding: 3px;
+  font-size: 1em; }
 
 /*# sourceMappingURL=global.css.map */
